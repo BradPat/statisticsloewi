@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportiertes Markdown Dokument</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+            line-height: 1.6; 
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 { 
+            margin-top: 1.5rem; 
+            margin-bottom: 0.5rem; 
+            font-weight: 600; 
+        }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.25rem; }
+        p { margin: 0.75rem 0; }
+        ul, ol { margin: 0.75rem 0; padding-left: 2rem; }
+        li { margin: 0.25rem 0; }
+        pre { 
+            background: #f5f5f5; 
+            padding: 1rem; 
+            border-radius: 4px; 
+            overflow-x: auto; 
+            border: 1px solid #ddd;
+        }
+        code { 
+            background: #f5f5f5; 
+            padding: 0.2rem 0.4rem; 
+            border-radius: 2px; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        pre code { background: none; padding: 0; }
+        blockquote { 
+            border-left: 4px solid #0540F0; 
+            margin: 1rem 0; 
+            padding-left: 1rem; 
+            background: #f8f9fa;
+            font-style: italic;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 1rem 0;
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 0.5rem; 
+            text-align: left; 
+        }
+        th { 
+            background: #f5f5f5; 
+            font-weight: 600;
+        }
+        hr {
+            margin: 2rem 0;
+            border: none;
+            border-top: 2px solid #ddd;
+        }
+        a {
+            color: #0540F0;
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Spielanalyse: vs. Stommeln – Individuelle Leistungsübersicht</h1>
+<p><strong>Datenbasis:</strong> Excel-Datei <code>vsStommeln.xlsx</code><br>
+<strong>Relevante Blätter:</strong></p>
+<ul>
+<li><strong>Transponed</strong> → absolute Werte (tatsächliche Spielzeit)</li>
+<li><strong>Normalized</strong> → alle Werte auf 64 Minuten normiert (für Vergleichbarkeit)</li>
+</ul>
+<hr>
+<h2>1. Rankings nach &quot;Transponed&quot; (absolute Werte)</h2>
+<table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>1. Platz</th>
+<th>2. Platz</th>
+<th>3. Platz</th>
+<th>4. Platz</th>
+<th>5. Platz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spielzeit</strong></td>
+<td>Simone, Dennis, Jonas, Samu (64')</td>
+<td>David S (64')</td>
+<td>David K (58')</td>
+<td>Mattis (55')</td>
+<td>Henry (50')</td>
+</tr>
+<tr>
+<td><strong>Ballkontakte</strong></td>
+<td>Simone &amp; Jonas (130)</td>
+<td>Mattis (100)</td>
+<td>Dennis (92)</td>
+<td>Henry (83)</td>
+<td>David K (59)</td>
+</tr>
+<tr>
+<td><strong>Angekommene Pässe</strong></td>
+<td>Jonas (24)</td>
+<td>Simone (17)</td>
+<td>David K (17)</td>
+<td>Noah (13)</td>
+<td>Dennis (12)</td>
+</tr>
+<tr>
+<td><strong>% Angekommene Pässe</strong></td>
+<td>David S &amp; Rio (100%)</td>
+<td>Noah (92.9%)</td>
+<td>Henry (85.7%)</td>
+<td>David K (73.9%)</td>
+<td>Jonas (68.6%)</td>
+</tr>
+<tr>
+<td><strong>Schüsse aufs Tor</strong></td>
+<td>Samu &amp; Henry (4)</td>
+<td>Mattis, Jonas</td>
+<td>Noah (1)</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>Zweikämpfe gewonnen</strong></td>
+<td>Dennis (9)</td>
+<td>Simone (5)</td>
+<td>Jonas, Henry, Noah (4)</td>
+<td>Mattis (4)</td>
+<td>David K (1)</td>
+</tr>
+<tr>
+<td><strong>Zweikampf-Quote gesamt</strong></td>
+<td>Dennis (81.8%)</td>
+<td>Noah (80%)</td>
+<td>David K (50%)</td>
+<td>Jonas (44.4%)</td>
+<td>Simone (31.3%)</td>
+</tr>
+<tr>
+<td><strong>Ballkontakte gegner. Hälfte</strong></td>
+<td>Jonas (93)</td>
+<td>Henry (73)</td>
+<td>Mattis (63)</td>
+<td>Emil (50)</td>
+<td>Samu (38)</td>
+</tr>
+<tr>
+<td><strong>Anteil gegner. Hälfte</strong></td>
+<td>Henry (87.95%)</td>
+<td>Emil (78.1%)</td>
+<td>Jonas (71.5%)</td>
+<td>Samu (69.1%)</td>
+<td>Noah (68.6%)</td>
+</tr>
+<tr>
+<td><strong>Abgefangene Bälle</strong></td>
+<td>Jonas (7)</td>
+<td>Dennis (6)</td>
+<td>Mattis &amp; Henry (5)</td>
+<td>Samu (3)</td>
+<td>Simone (2)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>2. Rankings nach &quot;Normalized&quot; (pro 64 Minuten)</h2>
+<table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>1. Platz</th>
+<th>2. Platz</th>
+<th>3. Platz</th>
+<th>4. Platz</th>
+<th>5. Platz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pässe / 64 min</strong></td>
+<td>Jonas (35)</td>
+<td>Noah (31)</td>
+<td>Simone (29)</td>
+<td>David K (25)</td>
+<td>Mattis (20)</td>
+</tr>
+<tr>
+<td><strong>% Angekommene Pässe</strong></td>
+<td>Rio (100%)</td>
+<td>Noah (92.9%)</td>
+<td>Henry (85.7%)</td>
+<td>David K (73.9%)</td>
+<td>Jonas (68.6%)</td>
+</tr>
+<tr>
+<td><strong>Ballkontakte / 64 min</strong></td>
+<td>Simone &amp; Jonas (130)</td>
+<td>Mattis (116)</td>
+<td>Noah (113)</td>
+<td>Henry (106)</td>
+<td>Dennis (92)</td>
+</tr>
+<tr>
+<td><strong>Zweikämpfe / 64 min</strong></td>
+<td>Henry (19)</td>
+<td>Mattis (17)</td>
+<td>Simone (16)</td>
+<td>Noah,Dennis,Emil (11)</td>
+<td>Samu (10)</td>
+</tr>
+<tr>
+<td><strong>Zweikampf-Quote gesamt</strong></td>
+<td>Dennis (81.8%)</td>
+<td>Noah (80,00%)</td>
+<td>David K (50,00%)</td>
+<td>Jonas (44.4%)</td>
+<td>Simone (31.3%)</td>
+</tr>
+<tr>
+<td><strong>Offensive Zweikampf-Quote</strong></td>
+<td>Dennis &amp; Simone (100%)</td>
+<td>Noah (75%)</td>
+<td>Mattis (40%)</td>
+<td>Jonas (29%)</td>
+<td>Henry (25%)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>3. Individuelle Spielerbewertungen</h2>
+<h3>Simone</h3>
+<ul>
+<li><strong>Stärke:</strong> Sehr viele Ballkontakte (130), gute Defensivpräsenz</li>
+<li><strong>Schwäche:</strong> Nur 58.6 % angekommene Pässe (schlechtester Wert aller Stammspieler), nur 31.3 % Zweikampfquote, nur 6 % Ballkontakte auf gegnerischer Hälfte</li>
+</ul>
+<h3>Dennis</h3>
+<ul>
+<li><strong>Stärke:</strong> Beste Zweikampfquote des Teams (81.8 %), 100 % offensive Zweikämpfe gewonnen, 77.8 % defensiv</li>
+<li><strong>Schwäche:</strong> Wenig Offensivbeitrag (kaum Vorwärtsspiel)</li>
+</ul>
+<h3>David K</h3>
+<ul>
+<li><strong>Stärke:</strong> Solide Passquote (73.9 %), unauffällig sicher</li>
+<li><strong>Schwäche:</strong> Kaum Zweikämpfe (nur 2 insgesamt), wenig Präsenz</li>
+</ul>
+<h3>Samu</h3>
+<ul>
+<li><strong>Stärke:</strong> 5 Schüsse (meiste im Team), 4 aufs Tor</li>
+<li><strong>Schwäche:</strong> Schlechte Passquote (42.9 %), nur 10 % Zweikampfquote, niedrige Einwurfquote (10%)</li>
+</ul>
+<h3>Mattis</h3>
+<ul>
+<li><strong>Stärke:</strong> Sehr präsent (130 Ballkontakte), viel auf gegnerischer Hälfte</li>
+<li><strong>Schwäche:</strong> Nur 26.7 % Zweikampfquote, zu viele offensive Zweikämpfe verloren</li>
+</ul>
+<h3>Jonas</h3>
+<ul>
+<li><strong>Stärke:</strong> Meiste Pässe (35), 7 abgefangene Bälle, 93 Ballkontakte gegner. Hälfte</li>
+<li><strong>Schwäche:</strong> Zweikampfquote nur 44 %, 7 Pässe zurück zum Torwart (Höchstwert)</li>
+</ul>
+<h3>Emil</h3>
+<ul>
+<li><strong>Stärke:</strong> Viel in gegnerischer Hälfte (78 %)</li>
+<li><strong>Schwäche:</strong> 0 Schüsse in 46 Minuten, 50 % Passquote, 6 Ballverlust bei Annahme</li>
+</ul>
+<h3>Rio</h3>
+<ul>
+<li><strong>Stärke:</strong> 100 % Passgenauigkeit in 18 Minuten, 1/1 Flanken angekommen</li>
+<li><strong>Schwäche:</strong> Wenig Spielzeit für valide Einschätzung (kein auffälliger Wert)</li>
+</ul>
+<h3>Noah</h3>
+<ul>
+<li><strong>Stärke:</strong> 92.9 % Passgenauigkeit, 80 % Zweikampfquote, sehr effizient</li>
+<li><strong>Schwäche:</strong> Wenig Spielzeit für valide Einschätzung (kein auffälliger Wert)</li>
+</ul>
+<h3>Henry</h3>
+<ul>
+<li><strong>Stärke:</strong> 4 Schüsse aufs Tor, 87.95 % Ballkontakte gegner. Hälfte (bester Wert)</li>
+<li><strong>Schwäche:</strong> Nur 26.7 % Zweikampfquote, viele offensive Zweikämpfe verloren</li>
+</ul>
+<h3>David S</h3>
+<ul>
+<li><strong>Stärke:</strong> 100 % Passgenauigkeit bei Dead Balls, keine Fehler</li>
+<li><strong>Schwäche:</strong> 11 lange Bälle ohne Druck, 7 direkt zum Gegner (63.6 % Verlustquote)</li>
+</ul>
+<hr>
+<h2>4. Vergleichbarkeitstabellen</h2>
+<h3>Anzahl Schüsse</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Anzahl Schüsse</th>
+<th>% Schüsse aufs Tor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Samu</strong></td>
+<td>5</td>
+<td>80%</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>4</td>
+<td>50%</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>4</td>
+<td>100%</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>4</td>
+<td>50%</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>1</td>
+<td>100%</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>1</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>1</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>1</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Anzahl Pässe</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Anzahl Pässe (normalisiert)</th>
+<th>Pässe/Minute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>35</td>
+<td>0,55</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>31</td>
+<td>0,48</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>29</td>
+<td>0,45</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>25</td>
+<td>0,40</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>20</td>
+<td>0,31</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>20</td>
+<td>0,31</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>18</td>
+<td>0,28</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>17</td>
+<td>0,26</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>14</td>
+<td>0,22</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>7</td>
+<td>0,11</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Passquote</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>% Passquote</th>
+<th>Anzahl Pässe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rio</strong></td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>92,9</td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>85,7</td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>73,9</td>
+<td>23</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>68,6</td>
+<td>35</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>64,7</td>
+<td>17</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>60,0</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>58,6</td>
+<td>29</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>50,0</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>42,9</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Zweikampfquote (offensiv)</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>% Zweikampfquote (offensiv)</th>
+<th>Anzahl Zweikämpfe (offensiv)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>100</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>75</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>40</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>29</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>25</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>13</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>-</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>-</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Zweikampfquote (defensiv)</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>% Zweikampfquote (defensiv)</th>
+<th>Anzahl Zweikämpfe (defensiv)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>100</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>100</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>78</td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>50</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>33</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>27</td>
+<td>15</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>13</td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>-</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Ballkontakte</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Ballkontakte (normalisiert)</th>
+<th>Ballkontakte / Minute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>130</td>
+<td>2,03</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>130</td>
+<td>2,03</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>116</td>
+<td>1,82</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>113</td>
+<td>1,76</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>106</td>
+<td>1,66</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>92</td>
+<td>1,44</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>89</td>
+<td>1,39</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>65</td>
+<td>1,02</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>55</td>
+<td>0,86</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>28</td>
+<td>0,44</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Anteil Ballkontakte (Gegnerische Hälfte)</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Anteil Ballkontakte (Gegnerische Hälfte)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Henry</strong></td>
+<td>88,0%</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>78,1%</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>71,5%</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>69,1%</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>68,6%</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>63,0%</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>50,0%</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>20,3%</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>19,6%</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>6,2%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Geklärte Bälle</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Geklärte Bälle</th>
+<th>Davon ohne Gegnerdruck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>18</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>11</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>9</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Fehler bei der Ballannahme</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Fehler bei der Ballannahme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Henry</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Empfangene Pässe</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Empfangene Pässe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>24</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>14</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Pässe vom Torwart empfangen</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Pässe vom Torwart empfangen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simone</strong></td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Dennis</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>David K</strong></td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>Einwurfquote</h3>
+<table>
+<thead>
+<tr>
+<th>Spieler</th>
+<th>Einwurfquote</th>
+<th>Anzahl Einwürfe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>David K</strong></td>
+<td>100%</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>100%</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Jonas</strong></td>
+<td>70%</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Simone</strong></td>
+<td>50%</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Samu</strong></td>
+<td>10%</td>
+<td>11</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>0%</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Mattis</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Rio</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Emil</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Noah</strong></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Fertig – du kannst diesen Markdown-Code 1:1 kopieren und mit einem Markdown-to-HTML-Converter (z. B. Pandoc oder online-tools) in eine HTML-Seite umwandeln.</p>
+
+</body>
+</html>
